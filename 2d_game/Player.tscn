@@ -1,0 +1,85 @@
+[gd_scene load_steps=12 format=3 uid="uid://dwjbyjo7l083w"]
+
+[ext_resource type="Script" path="res://Player.cs" id="1_1q2hw"]
+[ext_resource type="Texture2D" uid="uid://duu44he7ohb86" path="res://art/playerGrey_up1.png" id="1_aus1k"]
+[ext_resource type="Texture2D" uid="uid://u5n23j8d8eqi" path="res://art/playerGrey_up2.png" id="2_ecdnr"]
+[ext_resource type="Texture2D" uid="uid://cdglkr2jbb1hw" path="res://art/playerGrey_walk1.png" id="3_8s7fd"]
+[ext_resource type="Texture2D" uid="uid://014jmrco1wfu" path="res://art/immortal_up_1.png" id="4_5jwcq"]
+[ext_resource type="Texture2D" uid="uid://ccglwx8jaw4lx" path="res://art/playerGrey_walk2.png" id="4_yr7yr"]
+[ext_resource type="Texture2D" uid="uid://cbh3ajhskv7j7" path="res://art/immortal_up_2.png" id="5_b1hrh"]
+[ext_resource type="Texture2D" uid="uid://u47n43ls6rjd" path="res://art/immortal_walk_1.png" id="8_mx8rs"]
+[ext_resource type="Texture2D" uid="uid://cb30gbsigh0pv" path="res://art/immortal_walk_2.png" id="9_xka6m"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m8qy0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_aus1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ecdnr")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_5jwcq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_b1hrh")
+}],
+"loop": true,
+"name": &"up_immortal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_8s7fd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yr7yr")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_mx8rs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xka6m")
+}],
+"loop": true,
+"name": &"walk_immortal",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_podx4"]
+radius = 27.0
+height = 70.0
+
+[node name="Player" type="Area2D"]
+position = Vector2(424, 303)
+script = ExtResource("1_1q2hw")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_m8qy0")
+animation = &"walk"
+frame_progress = 0.942537
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_podx4")
+
+[node name="ImmortalTimer" type="Timer" parent="."]
+wait_time = 8.0
+one_shot = true
+
+[connection signal="area_entered" from="." to="." method="OnAreaEntered"]
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]
+[connection signal="timeout" from="ImmortalTimer" to="." method="OnImmortalTimerTimeout"]

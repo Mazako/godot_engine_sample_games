@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bd0m2mc01kmfk"]
+
+[ext_resource type="Script" path="res://PowerBall.cs" id="1_1dbem"]
+[ext_resource type="Texture2D" uid="uid://cau6ddl76f0pw" path="res://art/ball.png" id="1_21xvt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_58fcj"]
+radius = 126.92
+
+[node name="PowerBall" type="Area2D" groups=["powerBalls"]]
+position = Vector2(178, 154)
+scale = Vector2(0.1, 0.1)
+script = ExtResource("1_1dbem")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_58fcj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.65625, 0.65625)
+texture = ExtResource("1_21xvt")

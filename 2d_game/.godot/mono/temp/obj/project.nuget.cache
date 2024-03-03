@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "s2ziEiPgiFsh9hIrXAlfn9jmGNQvQ7g8MbJWaeUIJHjAom+xaNHtCeUlQu38zFeanqspoUoQcyujCNgnXNstDg==",
+  "success": true,
+  "projectFilePath": "C:\\godot\\2d_game\\sample_2d_game.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\micha\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+C:\godot\2d_game\.godot\mono\temp\bin\Debug\sample_2d_game.deps.json
+C:\godot\2d_game\.godot\mono\temp\bin\Debug\sample_2d_game.runtimeconfig.json
+C:\godot\2d_game\.godot\mono\temp\bin\Debug\sample_2d_game.dll
+C:\godot\2d_game\.godot\mono\temp\bin\Debug\sample_2d_game.pdb
+C:\godot\2d_game\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\godot\2d_game\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\godot\2d_game\.godot\mono\temp\obj\Debug\sample_2d_game.csproj.AssemblyReference.cache
+C:\godot\2d_game\.godot\mono\temp\obj\Debug\sample_2d_game.GeneratedMSBuildEditorConfig.editorconfig
+C:\godot\2d_game\.godot\mono\temp\obj\Debug\sample_2d_game.AssemblyInfoInputs.cache
+C:\godot\2d_game\.godot\mono\temp\obj\Debug\sample_2d_game.AssemblyInfo.cs
+C:\godot\2d_game\.godot\mono\temp\obj\Debug\sample_2d_game.csproj.CoreCompileInputs.cache
+C:\godot\2d_game\.godot\mono\temp\obj\Debug\sample_2d_game.csproj.CopyComplete
+C:\godot\2d_game\.godot\mono\temp\obj\Debug\sample_2d_game.dll
+C:\godot\2d_game\.godot\mono\temp\obj\Debug\refint\sample_2d_game.dll
+C:\godot\2d_game\.godot\mono\temp\obj\Debug\sample_2d_game.pdb
+C:\godot\2d_game\.godot\mono\temp\obj\Debug\sample_2d_game.genruntimeconfig.cache
+C:\godot\2d_game\.godot\mono\temp\obj\Debug\ref\sample_2d_game.dll
