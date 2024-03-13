@@ -1,0 +1,33 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://ckl4pn3v7p8od"
+path="res://.godot/imported/Redkost Comic.otf-f6a7f61ab72340bbadfaadd0a6fbfbbb.fontdata"
+
+[deps]
+
+source_file="res://fonts/Redkost Comic.otf"
+dest_files=["res://.godot/imported/Redkost Comic.otf-f6a7f61ab72340bbadfaadd0a6fbfbbb.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

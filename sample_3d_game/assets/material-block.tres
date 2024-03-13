@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://c6bol4fnrgevx"]
+
+[ext_resource type="Texture2D" uid="uid://2c3iwpwvu4ff" path="res://imports/block_PavingStones28_col.jpg" id="1_gnmqr"]
+[ext_resource type="Texture2D" uid="uid://dla56h83o3mid" path="res://imports/block_PavingStones28_rgh.jpg" id="2_q0p0y"]
+[ext_resource type="Texture2D" uid="uid://cwd8cdsjnoppu" path="res://imports/block_PavingStones28_nrm.jpg" id="3_2h6bg"]
+
+[resource]
+resource_name = "material-block"
+cull_mode = 2
+albedo_texture = ExtResource("1_gnmqr")
+metallic_texture = ExtResource("2_q0p0y")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_q0p0y")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_scale = 2.0
+normal_texture = ExtResource("3_2h6bg")

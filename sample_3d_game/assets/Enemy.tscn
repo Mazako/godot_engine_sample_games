@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyd7y2bdp2hqk"]
+
+[ext_resource type="ArrayMesh" uid="uid://boaodqcqt5ojk" path="res://assets/enemy_Cube.tres" id="1_smeaf"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_cxonq"]
+radius = 2.0
+
+[node name="Enemy" type="Area3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+collision_layer = 7
+collision_mask = 7
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_smeaf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_cxonq")

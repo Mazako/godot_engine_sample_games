@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmgapitkw512h"]
+
+[ext_resource type="FontFile" uid="uid://ckl4pn3v7p8od" path="res://fonts/Redkost Comic.otf" id="1_bqo05"]
+[ext_resource type="Script" path="res://scripts/GameOver.cs" id="1_rqlnf"]
+[ext_resource type="FontFile" uid="uid://w3xikiojfc8u" path="res://fonts/ThatNogoFontCasual.ttf" id="2_etx66"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rqlnf")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1278.0
+offset_bottom = 718.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -639.0
+offset_right = 639.0
+offset_bottom = 255.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_bqo05")
+theme_override_font_sizes/font_size = 128
+text = "To sie porobilo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -183.0
+offset_top = -68.0
+offset_right = 183.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(0, 0.521569, 0.678431, 1)
+theme_override_fonts/font = ExtResource("2_etx66")
+theme_override_font_sizes/font_size = 48
+text = "JESZCZE          RAZ"
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="OnButtonPressed"]

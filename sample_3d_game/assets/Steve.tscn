@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://t3a8foi3uedy"]
+
+[ext_resource type="ArrayMesh" uid="uid://3g30vj55qv0b" path="res://assets/playerball (1)_Sphere.tres" id="1_mxm3g"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_urq2e"]
+size = Vector3(2, 2, 2)
+
+[node name="Steve" type="CharacterBody3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+process_physics_priority = 2
+shape = SubResource("BoxShape3D_urq2e")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_mxm3g")

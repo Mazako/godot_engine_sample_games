@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://5gi4f70fk24"]
+
+[ext_resource type="FontFile" uid="uid://c8lcff5gb5me6" path="res://fonts/Some Time Later.otf" id="1_6qhm2"]
+[ext_resource type="Script" path="res://scripts/YouWin.cs" id="1_nu3kg"]
+
+[node name="YouWin" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nu3kg")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1278.0
+offset_bottom = 712.0
+color = Color(0.537255, 1, 1, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -313.0
+offset_top = 78.0
+offset_right = 293.0
+offset_bottom = 297.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.890196, 0.235294, 0.803922, 1)
+theme_override_fonts/font = ExtResource("1_6qhm2")
+theme_override_font_sizes/font_size = 128
+text = "Wygrales essa"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -157.0
+offset_top = -45.0
+offset_right = 157.0
+offset_bottom = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.184314, 0.415686, 1, 1)
+theme_override_fonts/font = ExtResource("1_6qhm2")
+theme_override_font_sizes/font_size = 64
+text = "Zagraj jeszcze raz"
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="OnButtonPressed"]
